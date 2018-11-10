@@ -94,7 +94,7 @@ public class GameController extends HttpServlet {
 				dispatcher.forward(request, response);
 			break;
 			case "/game":
-				System.out.println(">>\n\n\n>>>>>> Listagemmmmmmmmmmmmmmmmmmmmmmmmmmmmmm");
+				
 				try(DAOFactory daoFactory = new DAOFactory()){
 					dao = daoFactory.getGameDAO();
 					

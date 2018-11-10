@@ -20,7 +20,7 @@
 	<%@include file="/view/include/scripts.jsp" %>
 	<br><br><br>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
-	
+	<!-- 
 	<h1>Testando valor DIAG</h1>
 	
 	<h3>Imprimindo teste</h3>
@@ -33,7 +33,7 @@
 					<p>${d.count}</p>	
 	</c:forEach>
 	<h3>Fim impressao teste</h3>
-		 
+	 -->	 
 	<!-- GRAFICO PIZZA DESENVOLVEDORAS MAIS PRESENTES -->
 	<div id="contain">
 		<div id="canvas-holder" style="display: inline-block; width:20%">
@@ -77,6 +77,10 @@
 	
 	
 	<!-- SCRIPT LINE CHART COM AREA PREENCHIDA -->
+	<script src="${pageContext.request.contextPath}/assets/js/histogram.js"></script>
+	<script src="${pageContext.request.contextPath}/assets/js/lineChart1.js"></script>
+	<script src="${pageContext.request.contextPath}/assets/js/pieChart1.js"></script>
+	
 	
 	<%@include file="/view/include/scripts.jsp" %>
 	

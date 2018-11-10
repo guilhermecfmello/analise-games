@@ -25,7 +25,6 @@ import model.Diagnosis;
 		"/diagnosis",
 		"/diagnosis/all"
 })
-
 public class DiagnosisController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        

@@ -14,7 +14,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <span class="navbar-brand"><a href="${pageContext.servletContext.contextPath}/view/menuInicial.jsp">Banco de Dados</a></span>
+            <span class="navbar-brand"><a href="${pageContext.servletContext.contextPath}/">Banco de Dados</a></span>
         </div>
         <div class="navbar-collapse collapse">
             
@@ -30,6 +30,7 @@
                         <ul class="dropdown-menu">
                         	<li><a href="${pageContext.servletContext.contextPath}/game">Listar jogos</a></li>
                             <li><a href="${pageContext.servletContext.contextPath}/game/create/first">Cadastrar jogo</a></li>
+                            <li><a href="${pageContext.servletContext.contextPath}/view/game/update.jsp">Alterar jogo</a></li>
                         </ul>
                     </li>
                     
@@ -46,13 +47,14 @@
                     </li>
                     
                     <li>
-                    	<a href="${pageContext.servletContext.contextPath}/view/json/import.jsp">Upload Json</a>
+                    	<a href="${pageContext.servletContext.contextPath}/diagnosis/all">Test_1</a>
                     </li>
                     
                     <li>
-                    	<a class="btn btn-lg btn-warning" href="${pageContext.servletContext.contextPath}/diagnosis/all">Diagnósticos</a>
+                    	<a href="/diagnosis/all">Test_2</a>
                     </li>
                 </ul>
+                
 
             
         </div>
