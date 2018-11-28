@@ -1,52 +1,26 @@
 
 
 var histogram1 = document.getElementById("histogramSteam");
-var histogram2 = document.getElementById("histogramNuuvem");
-var histogram3 = document.getElementById("histogramGamersgate");
-
 var data = {
-        labels: ["match1", "match2", "match3", "match4", "match5"],
+        labels: ["Steam", "Nuuvem", "GamersGate"],
         datasets: [
             {
-                label: "TeamA Score",
-                data: [10, 50, 25, 70, 40],
+                data: [10, 50, 25],
                 backgroundColor: [
-                    "rgba(10,20,30,0.3)",
-                    "rgba(10,20,30,0.3)",
-                    "rgba(10,20,30,0.3)",
-                    "rgba(10,20,30,0.3)",
-                    "rgba(10,20,30,0.3)"
+                    "#000070",
+                    "#5077bd",
+                    "#339900"
                 ],
                 borderColor: [
-                    "rgba(10,20,30,1)",
-                    "rgba(10,20,30,1)",
                     "rgba(10,20,30,1)",
                     "rgba(10,20,30,1)",
                     "rgba(10,20,30,1)"
                 ],
                 borderWidth: 1
-            },
-            {
-                label: "TeamB Score",
-                data: [20, 35, 40, 60, 50],
-                backgroundColor: [
-                    "rgba(50,150,200,0.3)",
-                    "rgba(50,150,200,0.3)",
-                    "rgba(50,150,200,0.3)",
-                    "rgba(50,150,200,0.3)",
-                    "rgba(50,150,200,0.3)"
-                ],
-                borderColor: [
-                    "rgba(50,150,200,1)",
-                    "rgba(50,150,200,1)",
-                    "rgba(50,150,200,1)",
-                    "rgba(50,150,200,1)",
-                    "rgba(50,150,200,1)"
-                ],
-                borderWidth: 1
-            }
-        ]
+            },        ]
     };
+
+
 
     //options
     var options = {
@@ -82,14 +56,3 @@ var data = {
         options: options
     });
 
-    var chart2 = new Chart(histogram2, {
-        type: "bar",
-        data: data,
-        options: options
-    });
-
-    var chart3 = new Chart(histogram3, {
-        type: "bar",
-        data: data,
-        options: options
-    });

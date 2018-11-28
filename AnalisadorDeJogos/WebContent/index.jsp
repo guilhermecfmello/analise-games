@@ -17,7 +17,7 @@
 	
 	<%@include file="view/include/navbar.jsp" %>
 	<%@include file="view/include/scripts.jsp" %>
-	
+	<h1>teste</h1>
 	
 	
 	

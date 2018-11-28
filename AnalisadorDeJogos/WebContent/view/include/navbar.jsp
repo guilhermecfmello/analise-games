@@ -14,7 +14,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <span class="navbar-brand"><a href="${pageContext.servletContext.contextPath}/">Banco de Dados</a></span>
+            <span class="navbar-brand"><a href="${pageContext.servletContext.contextPath}/view/menuInicial.jsp">Banco de Dados</a></span>
         </div>
         <div class="navbar-collapse collapse">
             
@@ -31,6 +31,7 @@
                         	<li><a href="${pageContext.servletContext.contextPath}/game">Listar jogos</a></li>
                             <li><a href="${pageContext.servletContext.contextPath}/game/create/first">Cadastrar jogo</a></li>
                             <li><a href="${pageContext.servletContext.contextPath}/view/game/update.jsp">Alterar jogo</a></li>
+                            <li><a href="${pageContext.servletContext.contextPath}/view/json/import.jsp">Importar jogos</a>
                         </ul>
                     </li>
                     
@@ -47,11 +48,17 @@
                     </li>
                     
                     <li>
-                    	<a href="${pageContext.servletContext.contextPath}/diagnosis/all">Test_1</a>
+                    	
                     </li>
-                    
-                    <li>
-                    	<a href="/diagnosis/all">Test_2</a>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" href="javascript:void(0)" data-toggle="dropdown">
+                            Gerar Relatórios<span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                        	<li><a href="${pageContext.servletContext.contextPath}/diagnosis/developers">Relatório Desenvolvedoras</a></li>
+                            <li><a href="${pageContext.servletContext.contextPath}/diagnosis/categories">Relatório Categorias</a></li>
+                            <li><a href="${pageContext.servletContext.contextPath}/diagnosis/games">Relatório Games</a></li>                            
+                        </ul>
                     </li>
                 </ul>
                 
